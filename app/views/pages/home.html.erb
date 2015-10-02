@@ -1,0 +1,23 @@
+<h1>Users:</h1>
+<% @users.each do |u| %>
+	<p> 
+		Username: <%= u.username %> <br>
+		Email: <%= u.email %> <br>
+		Age: <%= u.age %> <br>
+	</p>
+<% end %> 
+
+<h1>Cats:</h1>
+<% @cats.each do |c| %>
+	<p>
+		Name: <%= c.name %> <br>
+	</p>
+<% end %>
+
+<h1>ToDo:</h1>
+<% @todo.each do |td| %>
+	<p>
+		Task: <%= td.task %> <br>
+		Finished: <%= td.finished %> <br>
+	</p>
+<% end %>
